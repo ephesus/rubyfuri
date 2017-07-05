@@ -18,7 +18,7 @@ module Rubyfuri
       private
 
       def build_furiganas_and_surfaces
-        @furigana_doc.xpath('//word').each_with_index do |word|
+        @furigana_doc.xpath('//word').each do |word|
           surface = word.xpath('surface').text
           furigana = word.xpath('furigana').text
 
